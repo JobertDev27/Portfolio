@@ -40,9 +40,12 @@ header {
     border-radius: 25px;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 630px) {
     .socials-contact img {
         visibility: hidden;
         position: absolute;
+    }
+    .contact-button {
+        padding: 15px 25px;
     }
 }

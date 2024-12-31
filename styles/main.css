@@ -1,9 +1,14 @@
 main {
     margin-top: 150px;
-    /* temporary */
     height: 5000px;
 }
 
+.section-header {
+    margin: 10px 0px;
+    align-self: center;
+}
+
+/* HERO PAGE START */
 .hero-page {
     display: flex;
     flex: 1;
@@ -37,7 +42,9 @@ main {
     margin-top: 2rem;
     text-wrap: wrap;
 }
+/* HERO PAGE END */
 
+/* NAV SECTION START */
 .navigation-container {
     position: sticky;
     top: 59px;
@@ -60,24 +67,15 @@ main {
     font-size: 1.2rem;
     font-weight: 600;
 }
+/* NAV SECTION END */
 
+/* RESUME SECTION BEGIN */
 .resume-section {
     margin-top: 50px;
     margin-left: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-}
-
-.resume-section h3 {
-    margin-top: 10px;
-}
-
-.resume-section p {
-    margin-top: 10px;
-}
-
-.resume-right {
-    margin-top: 25px;
 }
 
 .skills-grid {
@@ -96,16 +94,61 @@ main {
 .skills-grid img {
     width: 100%;
 }
+/* RESUME SECTION END */
 
-@media (max-width: 550px) {
+/* PORFOLIO SECTION START */
+.project-section {
+    margin-top: 250px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    transition: opacity 400ms;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    overflow-y: auto;
+    border: 3px rgb(240 165 0) solid;
+    padding: 15px;
+    max-width: 800px;
+    gap: 10px;
+    border-radius: 25px;
+}
+
+.project-container div {
+    min-width: 300px;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(230 213 184);
+    
+}
+
+.project-container h3 {
+    color: rgb(27 26 23);
+}
+
+@media (max-width: 630px) {
+.hero-page {
+    flex-wrap: wrap;
+}
+
     .photo-container {
         margin: 0px;
+        height: auto;
     }
     .photo-container img {
-        height: 250px;
+        height: 100%;
     }
 
-    .resume-section {
+    .introduction {
+        padding-top: 0px;
+    }
+
+    .resume-section,
+    .project-section {
         display: block;
     }
 }
