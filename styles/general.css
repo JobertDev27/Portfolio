@@ -1,0 +1,29 @@
+p, h1, h2, h3 {
+    font-family: 'Open Sans';
+    margin: 0px;
+    color: rgb(230 213 184);
+}
+
+h2 {
+    color: rgb(240 165 0);
+    font-size: 1.2rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+body {
+    background-color: rgb(27 26 23);
+    margin: 0;
+}
+
+section {
+    margin: 0px;
+}
+
+@media (max-width: 550px) {
+    html {
+        font-size: 16px;
+    }
+}

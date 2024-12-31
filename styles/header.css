@@ -1,0 +1,48 @@
+header {
+    display: flex;
+    position: fixed;
+    height: 60px;
+    flex: 1;
+    width: 100%;
+    margin: 0px;
+    left: 0;
+    top: 0;
+    background-color: rgb(150, 60, 28);
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.title {
+    color: rgb(27 26 23);
+    margin: 0px;
+    padding-left: 30px;
+    font-weight: 800;
+}
+
+.socials-contact {
+    display: flex;
+    align-items: center;
+}
+
+.socials-contact img {
+    height: 36px;
+    margin: 0px 7px;
+}
+
+.contact-button {
+    cursor: pointer;
+    margin: 0px 10px;
+    padding: 15px 50px;
+    background-color: rgb(27 26 23);
+    color: rgb(240 165 0);
+    border: 3px solid rgb(240 165 0);
+    border-radius: 25px;
+}
+
+@media (max-width: 550px) {
+    .socials-contact img {
+        visibility: hidden;
+        position: absolute;
+    }
+}

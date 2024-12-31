@@ -1,0 +1,111 @@
+main {
+    margin-top: 150px;
+    /* temporary */
+    height: 5000px;
+}
+
+.hero-page {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+.photo-container {
+    height: 500px;
+}
+
+.photo-container img {
+    height: 100%;
+}
+
+.introduction {
+    padding: 20px;
+    font-weight: 400;
+    max-width: 500px;
+}
+
+.introduction-name {
+    color: rgb(240 165 0);
+    font-size: 2rem;
+}
+.introduction-job-title {
+    font-size: 1.5rem;
+    color: rgb(240 165 0);
+}
+
+.introduction-body {
+    margin-top: 2rem;
+    text-wrap: wrap;
+}
+
+.navigation-container {
+    position: sticky;
+    top: 59px;
+}
+
+.navigation-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(150, 60, 28);
+}
+
+.navigation-links a {
+    color: rgb(27 26 23);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.resume-section {
+    margin-top: 50px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.resume-section h3 {
+    margin-top: 10px;
+}
+
+.resume-section p {
+    margin-top: 10px;
+}
+
+.resume-right {
+    margin-top: 25px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skills-grid div {
+    display: flex;
+    flex-direction: column;
+    width: 64px;
+    align-items: center;
+    margin: 20px 50px 30px 0px;
+}
+
+.skills-grid img {
+    width: 100%;
+}
+
+@media (max-width: 550px) {
+    .photo-container {
+        margin: 0px;
+    }
+    .photo-container img {
+        height: 250px;
+    }
+
+    .resume-section {
+        display: block;
+    }
+}
