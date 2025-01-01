@@ -3,15 +3,20 @@ header {
     position: fixed;
     height: 60px;
     flex: 1;
-    width: 100%;
     margin: 0px;
+    width: 100%;
+    flex-direction: row;
+    width: 100%;
     left: 0;
     top: 0;
     background-color: rgb(150, 60, 28);
     align-items: center;
     justify-content: space-between;
     z-index: 10;
+    box-sizing: border-box;
+    overflow: hidden;
 }
+
 
 .title {
     color: rgb(27 26 23);

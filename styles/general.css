@@ -7,7 +7,6 @@ p, h1, h2, h3 {
 h2 {
     color: rgb(240 165 0);
     font-size: 1.2rem;
-    display: block;
 }
 
 h3 {
@@ -20,7 +19,7 @@ body {
 }
 
 section {
-    margin: 0px;
+    margin: 0;
 }
 
 
