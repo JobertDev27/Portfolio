@@ -32,7 +32,7 @@
     </header>
 
     <main>
-        <section class="hero-page">
+        <section id="landingPage" class="hero-page">
             <div class="photo-container">
                 <img src="picture/my-photo.png" alt="my picture">
             </div>
@@ -51,16 +51,16 @@
         </section>
         <nav class="navigation-container">
             <ul class="navigation-links">
-                <li> <a href="">About</a> </li>
-                <li> <a href="">Resume</a> </li>
-                <li> <a href="">Projects</a> </li>
-                <li> <a href="">Services</a> </li>
-                <li> <a href="">Contact</a> </li>
+                <li> <a href="#landingPage">About</a> </li>
+                <li> <a href="#resume">Resume</a> </li>
+                <li> <a href="#projects">Projects</a> </li>
+                <li> <a href="#services">Services</a> </li>
+                <li> <a href="#contact">Contact</a> </li>
             </ul>
         </nav>
-        <section class="resume-section">
+        <section id="resume" class="resume-section">
             <div class="section-header"> <h2>RESUME:</h2> </div>
-            <div class="Resume-left">
+            <div class="resume-left">
                 <h3>Personal Information</h3>
                 <p>
                     Name: Jobert Poylan Jr <br>
@@ -115,29 +115,119 @@
                 </div>
             </div>
         </section>
-        <section class="project-section">
+        <section id="projects" class="project-section">
             <h2 class="section-header">PROJECTS:</h2>
             <div class="project-container">
                 <div>
                     <h3>Project 1</h3>
+                    <img src="projects/portfolio.png" alt="">
+                    <span>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur explicabo sapiente, tempora quam laborum ullam tenetur quasi sequi sint commodi illum quisquam eaque provident perferendis?
+                    </span>
+                    <a class="web-url-button" href="">Learn More</a>
                 </div>
                 <div>
                     <h3>Project 2</h3>
+                    <img src="projects/portfolio (5).png" alt="">
+                    <span>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur explicabo sapiente, tempora quam laborum ullam tenetur quasi sequi sint commodi illum quisquam eaque provident perferendis?
+                    </span>
+                    <a class="web-url-button" href="">Learn More</a>
                 </div>
                 <div>
                     <h3>Project 3</h3>
+                    <img src="projects/portfolio (6).png" alt="">
+                    <span>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur explicabo sapiente, tempora quam laborum ullam tenetur quasi sequi sint commodi illum quisquam eaque provident perferendis?
+                    </span>
+                    <a class="web-url-button" href="">Learn More</a>
                 </div>
                 <div>
                     <h3>Project 4</h3>
+                    <img src="projects/portfolio (3).png" alt="">
+                    <span>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur explicabo sapiente, tempora quam laborum ullam tenetur quasi sequi sint commodi illum quisquam eaque provident perferendis?
+                    </span>
+                    <a class="web-url-button" href="">Learn More</a>
                 </div>
                 <div>
                     <h3>Project 5</h3>
+                    <img src="projects/portfolio (4).png" alt="">
+                    <span>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur explicabo sapiente, tempora quam laborum ullam tenetur quasi sequi sint commodi illum quisquam eaque provident perferendis?
+                    </span>
+                    <a class="web-url-button" href="">Learn More</a>
                 </div>
                 <div>
                     <h3>Project 6</h3>
+                    <img src="projects/portfolio (2).png" alt="">
+                    <span>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur explicabo sapiente, tempora quam laborum ullam tenetur quasi sequi sint commodi illum quisquam eaque provident perferendis?
+                    </span>
+                    <a class="web-url-button" href="">Learn More</a>
                 </div>
             </div>
         </section>
+
+        <section id="services" class="services-section">
+            <h2 class="section-header">SERVICES:</h2>
+
+            <div class="services-container">
+                <div>
+                    <img src="icons/devices.png" alt="">
+                    <span>Responsiveness <br><br>
+                        Designing your websites to look good on any screen sizes.
+                    </span>
+                </div>
+
+                <div>
+                    <img src="icons/server.png" alt="">
+                    <span>
+                        SEO <br><br>
+                        Improving your website visibility on search engines.
+                    </span>
+                </div>
+                
+                <div>
+                    <img src="icons/code.png" alt="">
+                    <span>
+                        Back-end development <br><br>
+                        Offer API development for handling business logic,<br>
+                        data processing, or user authentication.
+                    </span>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <div class="contact-body">
+                    <div class="contact-left">
+                        <h2>Let's Talk!</h2>
+                        <div> <input class="email-box" type="text" placeholder="Email Adress"> </div>
+                        <div> <textarea class="message-box" type="text" placeholder="Message" rows="15"></textarea> </div>
+                        <div> <button class="submit-button">SUBMIT</button> </div>
+                    </div>
+
+                    <div class="contact-right">
+                        <div> <h2>MORE CONTACT INFO:</h2> </div>
+                        <div class="contact-box">
+                            <img src="icons/phone.png" alt="">
+                            <h3>(+63)963 729 4502</h3>
+                        </div>
+                        <div class="contact-box">
+                            <img src="icons/email-yellow.png" alt="">
+                            <h3>jobertdev27@gmail.com</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </section>
+
     </main>
+    <footer> <span>Copyright 2024 Jobertdev27 - all rights reserved.</span> </footer>
 </body>
 </html>

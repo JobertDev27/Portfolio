@@ -1,18 +1,22 @@
 main {
     margin-top: 150px;
-    height: 5000px;
+}
+
+section {
+    margin-top: 250px;
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
 }
 
 .section-header {
-    margin: 10px 0px;
+    margin: 10px 10px 0px 0px;
     align-self: center;
 }
 
 /* HERO PAGE START */
 .hero-page {
-    display: flex;
-    flex: 1;
-    justify-content: space-evenly;
+    margin-top: 0px;
 }
 
 .photo-container {
@@ -48,6 +52,7 @@ main {
 .navigation-container {
     position: sticky;
     top: 59px;
+    z-index: 10;
 }
 
 .navigation-links {
@@ -73,14 +78,16 @@ main {
 .resume-section {
     margin-top: 50px;
     margin-left: 20px;
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
 }
 
 .skills-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+.resume-left p {
+    margin: 15px 0px;
 }
 
 .skills-grid div {
@@ -98,11 +105,8 @@ main {
 
 /* PORFOLIO SECTION START */
 .project-section {
-    margin-top: 250px;
     margin-left: 20px;
-    display: flex;
     align-items: center;
-    justify-content: space-evenly;
     
     transition: opacity 400ms;
 }
@@ -119,6 +123,9 @@ main {
 }
 
 .project-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     min-width: 300px;
     width: 300px;
     height: 400px;
@@ -128,7 +135,144 @@ main {
 
 .project-container h3 {
     color: rgb(27 26 23);
+    margin: 15px 0px;
 }
+
+.project-container img {
+    width: 200px;
+    height: 100px;
+    transition: width 300ms, height 300ms;
+}
+
+.project-container img:hover {
+    width: 250px;
+    height: 150px;
+}
+
+.project-container span {
+    margin: 15px;
+}
+
+.project-container a {
+    padding: 10px 25px;
+    border-radius: 50px;
+    border: 3px solid rgb(240 165 0);
+    color: rgb(240 165 0);
+    background-color: rgb(27 26 23);
+    text-decoration: none;
+    position: relative;
+    bottom: -25px;
+}
+/* PORTFOLIO SECTION END */
+
+/* SERVICES SECTION START */
+.services-section {
+    margin-left: 20px;
+    justify-content: space-evenly;
+}
+
+.services-container {
+    display: flex;
+    flex-direction: column;
+    width: clamp(80px, 100%, 800px);
+}
+
+.services-container div {
+    display: flex;
+    height: auto;
+    padding: 20px 0px;
+    border: 3px solid rgb(240 165 0);
+    margin: 20px 0px;
+    color: rgb(230 213 184);
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 25px;
+}
+
+.services-container img {
+    width: 64px;
+    margin: 0px;
+    margin: 0px 20px;
+}
+
+.services-container span {
+    margin-left: 10px;
+    margin-top: 10px;
+    text-wrap: wrap;
+    word-wrap: break-word;
+}
+/* SERVICES SECTION END */
+
+/* CONTACT SECTION START */
+.contact-section {
+    margin-left: 20px;
+}
+
+.contact-body {
+    display: flex;
+    flex: 1;
+    width: 800px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact-body div {
+    margin: 20px 0px;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.message-box {
+    width: 400px;
+    border: 0px;
+    padding: 5px;
+    background-color: rgb(230 213 184);
+}
+
+.email-box {
+    border: 0px;
+    padding: 5px;
+    background-color: rgb(230 213 184);
+    width: 400px;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    max-width: 200px;
+    border: 3px solid rgb(240 165 0);
+}
+
+.submit-button {
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    color: rgb(240 165 0);
+    background-color: rgb(27 26 23);
+    border: 2px solid rgb(240 165 0);
+}
+
+.contact-right {
+    margin-top: 0px;
+}
+
+.contact-right img {
+    width: 48px;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(150, 60, 28);
+    display: block;
+    padding: 5px;
+    height: auto;
+}
+
 
 @media (max-width: 630px) {
 .hero-page {
@@ -148,7 +292,9 @@ main {
     }
 
     .resume-section,
-    .project-section {
+    .project-section,
+    .services-section,
+    .contact-body {
         display: block;
     }
 }
