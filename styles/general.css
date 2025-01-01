@@ -4,6 +4,11 @@ p, h1, h2, h3 {
     color: rgb(230 213 184);
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 h2 {
     color: rgb(240 165 0);
     font-size: 1.2rem;
